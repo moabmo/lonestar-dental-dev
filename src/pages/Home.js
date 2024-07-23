@@ -21,23 +21,7 @@ const Home = () => {
         </div>
       </section>
       
-      <section className="services">
-        <h2>Our Services</h2>
-        <div className="service-categories">
-          <div className="service-category">
-            <h3>1. General Dentistry</h3>
-            <p>Among the many services we offer are regular checkups, cleanings, fillings, extractions, and diagnostic procedures.</p>
-          </div>
-          <div className="service-category">
-            <h3>2. Restorative Dentistry</h3>
-            <p>To assist restore the function and aesthetics of your teeth, we provide a number of restorative procedures, including fillings, crowns, bridges, and implants.</p>
-          </div>
-          <div className="service-category">
-            <h3>3. Cosmetic Dentistry</h3>
-            <p>We offer a range of cosmetic procedures including dental braces, teeth whitening, veneers, and bonding to enhance the appearance of your smile.</p>
-          </div>
-        </div>
-      </section>
+      
       
       <section className="vision-mission">
         <h2>Vision</h2>
@@ -73,12 +57,12 @@ const Home = () => {
         </div>
       </section>
       
-      <section className="contact-info">
-        <h2>Contact Us</h2>
-        <p>Kitengela Ola Petrol Station, 1st Floor</p>
-        <p>Phone: 0792-056-862</p>
-        <p>Instagram: <a href="https://www.instagram.com/_lonestardentalcare">@_lonestardentalcare</a></p>
-      </section>
+      {/* <section className="social-media">
+        <h2>Follow Us</h2>
+        <p>Instagram: <a href="https://www.instagram.com/_lonestardentalcare" target="_blank" rel="noopener noreferrer">@_lonestardentalcare</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/lonestardentalcare" target="_blank" rel="noopener noreferrer">@lonestardentalcare</a></p>
+        <p>Twitter: <a href="https://twitter.com/lonestardentalcare" target="_blank" rel="noopener noreferrer">@lonestardentalcare</a></p>
+      </section> */}
     </div>
   );
 };

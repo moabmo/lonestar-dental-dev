@@ -19,37 +19,30 @@
   color: #333;
 }
 
-.home .services {
+.home .services-overview {
   padding: 20px;
   background-color: #fff;
   text-align: center;
   font-family: 'Comfortaa', sans-serif;
 }
 
-.home .services h2 {
+.home .services-overview h2 {
   color: #9D2235;
 }
 
-.home .service-categories {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
+.home .services-overview ul {
+  list-style: none;
+  padding: 0;
 }
 
-.home .service-category {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f8f8f8;
+.home .services-overview ul li {
+  margin: 10px 0;
+  color: #333;
 }
 
-.home .service-category h3 {
+.home .services-overview a {
   color: #9D2235;
+  text-decoration: none;
 }
 
 .home .vision-mission {
@@ -120,23 +113,23 @@
   margin-bottom: 10px;
 }
 
-.home .contact-info {
+.home .social-media {
   padding: 20px;
   background-color: #fff;
   text-align: center;
   font-family: 'Comfortaa', sans-serif;
 }
 
-.home .contact-info h2 {
+.home .social-media h2 {
   color: #9D2235;
 }
 
-.home .contact-info p {
+.home .social-media p {
   color: #333;
   margin: 10px 0;
 }
 
-.home .contact-info a {
+.home .social-media a {
   color: #9D2235;
   text-decoration: none;
 }
