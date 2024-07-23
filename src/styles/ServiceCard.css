@@ -1,0 +1,28 @@
+/* ServiceCard.css */
+.service-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 200px; /* Add a fixed width */
+  }
+  
+  .service-card img {
+    width: 100px; /* Smaller image size */
+    height: 100px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .service-card h3 {
+    margin: 20px 0 10px;
+    color: #4CAF50;
+  }
+  
+  .service-card p {
+    color: #666;
+  }
+  

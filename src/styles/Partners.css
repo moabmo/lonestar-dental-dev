@@ -1,0 +1,34 @@
+/* Partners.css */
+.partners {
+    padding: 40px;
+    background-color: #f8f8f8;
+  }
+  
+  .partners h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 40px;
+  }
+  
+  .partners .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .partner-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .partner-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  

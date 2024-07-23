@@ -1,0 +1,28 @@
+/* Footer.css */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  footer .social-links a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

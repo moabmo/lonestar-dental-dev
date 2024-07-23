@@ -1,0 +1,18 @@
+/* Services.css */
+.services {
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.services h2 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 40px;
+}
+
+.services .service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
