@@ -1,94 +1,142 @@
 /* Home.css */
 .home .banner {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f0f0f0;
-    position: relative;
-    font-family: 'Comfortaa', sans-serif;
-  }
-  
-  .home .banner .home-logo {
-    width: 150px; /* Adjust size as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .home .banner .banner-text {
-    margin-top: 20px;
-    color: #333;
-  }
-  
-  .home .vision-mission {
-    padding: 20px;
-    background-color: #fff;
-    text-align: center;
-    font-family: 'Comfortaa', sans-serif;
-  }
-  
-  .home .vision-mission h2 {
-    margin-top: 20px;
-    color: #9D2235;
-  }
-  
-  .home .vision-mission p {
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  .home .core-values {
-    padding: 20px;
-    background-color: #fff;
-    text-align: center;
-    font-family: 'Comfortaa', sans-serif;
-  }
-  
-  .home .core-values h2 {
-    margin-top: 20px;
-    color: #9D2235;
-  }
-  
-  .home .core-values ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .home .core-values ul li {
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  .home .services-overview, .home .partners-overview {
-    padding: 20px;
-    background-color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Comfortaa', sans-serif;
-  }
-  
-  .home .services-overview h2, .home .partners-overview h2 {
-    color: #9D2235;
-  }
-  
-  .partner-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .partner-card {
-    text-align: center;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .partner-image {
-    width: 100px; /* Ensure all partner images have the same size */
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+  position: relative;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.home .banner .home-logo {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.home .banner .banner-text {
+  margin-top: 20px;
+  color: #333;
+}
+
+.home .services {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.home .services h2 {
+  color: #9D2235;
+}
+
+.home .service-categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home .service-category {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+}
+
+.home .service-category h3 {
+  color: #9D2235;
+}
+
+.home .vision-mission {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.home .vision-mission h2 {
+  margin-top: 20px;
+  color: #9D2235;
+}
+
+.home .vision-mission p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.home .core-values {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.home .core-values h2 {
+  margin-top: 20px;
+  color: #9D2235;
+}
+
+.home .core-values p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.home .partners-overview {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.home .partners-overview h2 {
+  color: #9D2235;
+}
+
+.partner-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.partner-card {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.partner-image {
+  width: 100px; /* Ensure all partner images have the same size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.home .contact-info {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.home .contact-info h2 {
+  color: #9D2235;
+}
+
+.home .contact-info p {
+  color: #333;
+  margin: 10px 0;
+}
+
+.home .contact-info a {
+  color: #9D2235;
+  text-decoration: none;
+}
