@@ -7,6 +7,10 @@ header {
   background-color: #003366;
   color: white;
   font-family: 'Comfortaa', sans-serif;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header .logo img {
@@ -51,7 +55,7 @@ header nav ul li a {
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #9b9d9e;
+    background-color: #dddddd;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -70,11 +74,15 @@ header nav ul li a {
     margin: 10px 0;
   }
 
+  header nav ul li a {
+    color: white; /* Ensure links are white on mobile menu */
+  }
+
   .hamburger {
     display: flex;
   }
 
   .hamburger .bar {
-    background-color: #9D2235; /* Change color to red for small screens */
+    background-color: #9D2235; /* Ensure hamburger bars are white */
   }
 }

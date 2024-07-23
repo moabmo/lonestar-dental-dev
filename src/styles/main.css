@@ -1,27 +1,28 @@
 body {
-    font-family: 'Comfortaa', sans-serif;
-    background-color: #DAE8FC;
-    color: #333;
-  }
-  
-  header, footer {
-    background-color: #003366;
-    color: white;
-  }
-  
-  a {
-    color: white;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  h1, h2, h3 {
-    color: #9D2235;
-  }
-  
-  .service-card {
-    background-color: #fff;
-  }
-  
+  font-family: 'Comfortaa', sans-serif;
+  background-color: #DAE8FC;
+  color: #333;
+  margin: 0;
+  padding-top: 70px; /* Adjust this value to match the header height */
+}
+
+header, footer {
+  background-color: #003366;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: #9D2235;
+}
+
+.service-card {
+  background-color: #fff;
+}
