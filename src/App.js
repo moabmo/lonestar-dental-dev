@@ -6,23 +6,22 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
-import './App.css';
+import Booking from './pages/Booking';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/booking" element={<Booking />} />
+      </Routes>
+      <Footer />
     </Router>
   );
-}
+};
 
 export default App;

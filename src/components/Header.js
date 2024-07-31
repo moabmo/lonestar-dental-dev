@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/Header.css';
 
 const Header = () => {
@@ -12,16 +12,17 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <Link to="/">
+        <NavLink to="/">
           <img src={process.env.PUBLIC_URL + '/assets/images/logo.jpg'} alt="Lonestar Dental Care" />
-        </Link>
+        </NavLink>
       </div>
       <nav className={isOpen ? "nav-open" : ""}>
         <ul>
-          <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-          <li><Link to="/about-us" onClick={toggleMenu}>About Us</Link></li>
-          <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
-          <li><Link to="/contact-us" onClick={toggleMenu}>Contact Us</Link></li>
+          <li><NavLink exact to="/" activeClassName="active" onClick={toggleMenu}>Home</NavLink></li>
+          <li><NavLink to="/about-us" activeClassName="active" onClick={toggleMenu}>About Us</NavLink></li>
+          <li><NavLink to="/services" activeClassName="active" onClick={toggleMenu}>Services</NavLink></li>
+          <li><NavLink to="/booking" activeClassName="active" onClick={toggleMenu}>Book Appointment</NavLink></li>
+          <li><NavLink to="/contact-us" activeClassName="active" onClick={toggleMenu}>Contact Us</NavLink></li>
         </ul>
       </nav>
       <div className="hamburger" onClick={toggleMenu}>

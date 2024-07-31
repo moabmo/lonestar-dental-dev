@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
 const partners = [
@@ -21,28 +22,49 @@ const Home = () => {
         </div>
       </section>
       
-      
+      <section className="services-overview">
+        <h2>Our Services</h2>
+        <div className="service-items">
+          <div className="service-item">
+            <h3><Link to="/services#general-dentistry">General Dentistry</Link></h3>
+            <p>Regular checkups, cleanings, fillings, extractions, and diagnostic procedures.</p>
+          </div>
+          <div className="service-item">
+            <h3><Link to="/services#restorative-dentistry">Restorative Dentistry</Link></h3>
+            <p>Fillings, crowns, bridges, and implants to restore function and aesthetics.</p>
+          </div>
+          <div className="service-item">
+            <h3><Link to="/services#cosmetic-dentistry">Cosmetic Dentistry</Link></h3>
+            <p>Teeth whitening, veneers, and bonding to enhance the appearance of your smile.</p>
+          </div>
+        </div>
+      </section>
       
       <section className="vision-mission">
-        <h2>Vision</h2>
-        <p>To be the CHOICE for a complete multi-specialties dental practice chosen for our heart/core values and expertise in the region.</p>
-        
-        <h2>Mission</h2>
-        <p>We sharpen smiles and build good and long-lasting relationships with our patients.</p>
-        <p>We gently work with our patients towards their best dental experience; always focused on alleviating their anxieties and fears. We value and continually build on our patients' trust in our integrity, our expertise, and our genuine care for their well-being.</p>
-        <p>To deliver excellent quality of clinical dental care to our patients with the most current know-how.</p>
-        <p>We sharpen smiles and build good long-lasting relationships with other dental community.</p>
-        <p>To collaborate with other dental colleagues and serve in our various dental professional bodies.</p>
-        <p>We sharpen smiles and build good long-lasting relationships with medical colleagues, laboratories and Dental support staff.</p>
-        <p>To work with our partners in developing the best dental products and services to our patients.</p>
-        <p>To invite our partners to grow with us by innovative and introducing new technologies for the betterment of our patients.</p>
+        <div className="card">
+          <h2>Vision</h2>
+          <p>To be the CHOICE for a complete multi-specialties dental practice chosen for our heart/core values and expertise in the region.</p>
+        </div>
+        <div className="card">
+          <h2>Mission</h2>
+          <p>We sharpen smiles and build good and long-lasting relationships with our patients.</p>
+          <p>We gently work with our patients towards their best dental experience; always focused on alleviating their anxieties and fears. We value and continually build on our patients' trust in our integrity, our expertise, and our genuine care for their well-being.</p>
+          <p>To deliver excellent quality of clinical dental care to our patients with the most current know-how.</p>
+          <p>We sharpen smiles and build good long-lasting relationships with other dental community.</p>
+          <p>To collaborate with other dental colleagues and serve in our various dental professional bodies.</p>
+          <p>We sharpen smiles and build good long-lasting relationships with medical colleagues, laboratories and Dental support staff.</p>
+          <p>To work with our partners in developing the best dental products and services to our patients.</p>
+          <p>To invite our partners to grow with us by innovative and introducing new technologies for the betterment of our patients.</p>
+        </div>
       </section>
       
       <section className="core-values">
-        <h2>Core Values</h2>
-        <p>The dental patient is at the center of everything we do and believe in.</p>
-        <p>We seek to upgrade our knowledge and skills for the benefit of providing excellent and most caring dental services possible for our patients.</p>
-        <p>We work as a team and uphold our professional responsibilities and integrity with customized treatment plans and no overtreatment.</p>
+        <div className="card">
+          <h2>Core Values</h2>
+          <p>The dental patient is at the center of everything we do and believe in.</p>
+          <p>We seek to upgrade our knowledge and skills for the benefit of providing excellent and most caring dental services possible for our patients.</p>
+          <p>We work as a team and uphold our professional responsibilities and integrity with customized treatment plans and no overtreatment.</p>
+        </div>
       </section>
       
       <section className="partners-overview">
@@ -57,12 +79,6 @@ const Home = () => {
         </div>
       </section>
       
-      {/* <section className="social-media">
-        <h2>Follow Us</h2>
-        <p>Instagram: <a href="https://www.instagram.com/_lonestardentalcare" target="_blank" rel="noopener noreferrer">@_lonestardentalcare</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/lonestardentalcare" target="_blank" rel="noopener noreferrer">@lonestardentalcare</a></p>
-        <p>Twitter: <a href="https://twitter.com/lonestardentalcare" target="_blank" rel="noopener noreferrer">@lonestardentalcare</a></p>
-      </section> */}
     </div>
   );
 };
