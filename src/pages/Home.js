@@ -14,23 +14,26 @@ const partners = [
 const Home = () => {
   return (
     <div className="home">
-      <section className="banner">
-        <img src={process.env.PUBLIC_URL + '/assets/images/logo.jpg'} alt="Lonestar Dental Care" className="home-logo" />
-        <div className="banner-text">
+      <section className="hero">
+        <img src={process.env.PUBLIC_URL + '/assets/images/sample.png'} alt="Lonestar Dental Care" className="hero-image" />
+        <div className="hero-overlay"></div>
+        <div className="hero-text">
           <h1>Welcome to Lonestar Dental Care</h1>
           <p>Providing excellent dental care services in a comfortable and gentle environment.</p>
+          <Link to="/booking" className="btn primary-btn">Book Now</Link>
         </div>
       </section>
-      
+
       <section className="intro">
+        <h2>Exceptional Dental Services</h2>
         <div className="intro-content">
-          <img src={process.env.PUBLIC_URL + '/assets/images/sample.png'} alt="Dental Care" className="intro-image" />
           <div className="intro-text">
-            <h2>Exceptional Dental Services</h2>
             <p>At Lonestar Dental Care, we are committed to providing exceptional dental services to our patients. Our team of skilled and experienced dentists is dedicated to ensuring your comfort and satisfaction.</p>
             <p>We offer a wide range of dental services, from general dentistry to cosmetic and restorative procedures. Our state-of-the-art facility is equipped with the latest technology to provide you with the best care possible.</p>
             <p>Your smile is our top priority, and we strive to build long-lasting relationships with our patients. Visit us today and experience the difference at Lonestar Dental Care.</p>
+            <Link to="/services" className="btn secondary-btn">View Our Services</Link>
           </div>
+          <img src={process.env.PUBLIC_URL + '/assets/images/sample.png'} alt="Dental Care" className="intro-image" />
         </div>
       </section>
 
@@ -49,6 +52,26 @@ const Home = () => {
             <h3><Link to="/services#cosmetic-dentistry">Cosmetic Dentistry</Link></h3>
             <p>Teeth whitening, veneers, and bonding to enhance the appearance of your smile.</p>
           </div>
+        </div>
+        <div className="view-more">
+          <Link to="/services" className="btn secondary-btn">View More Services</Link>
+        </div>
+      </section>
+      
+      <section className="about-overview">
+        <h2>About Us</h2>
+        <div className="about-items">
+          <div className="about-item">
+            <h3>Who We Are</h3>
+            <p>Lonestar Dental Care is a private dental practice located in Kitengela, with a team of skilled and talented dentists committed to providing excellent dental care services to our patients in a comfortable, gentle environment.</p>
+          </div>
+          <div className="about-item">
+            <h3>Our Team</h3>
+            <p>Meet our dedicated team of dental professionals who are passionate about making your smile brighter and healthier. We believe in building good and long-lasting relationships with our patients, colleagues, and the community.</p>
+          </div>
+        </div>
+        <div className="view-more">
+          <Link to="/about" className="btn secondary-btn">Learn More About Us</Link>
         </div>
       </section>
       
@@ -81,7 +104,6 @@ const Home = () => {
           ))}
         </div>
       </section>
-      
     </div>
   );
 };
