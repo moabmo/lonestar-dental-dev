@@ -22,6 +22,18 @@ const Home = () => {
         </div>
       </section>
       
+      <section className="intro">
+        <div className="intro-content">
+          <img src={process.env.PUBLIC_URL + '/assets/images/sample.png'} alt="Dental Care" className="intro-image" />
+          <div className="intro-text">
+            <h2>Exceptional Dental Services</h2>
+            <p>At Lonestar Dental Care, we are committed to providing exceptional dental services to our patients. Our team of skilled and experienced dentists is dedicated to ensuring your comfort and satisfaction.</p>
+            <p>We offer a wide range of dental services, from general dentistry to cosmetic and restorative procedures. Our state-of-the-art facility is equipped with the latest technology to provide you with the best care possible.</p>
+            <p>Your smile is our top priority, and we strive to build long-lasting relationships with our patients. Visit us today and experience the difference at Lonestar Dental Care.</p>
+          </div>
+        </div>
+      </section>
+
       <section className="services-overview">
         <h2>Our Services</h2>
         <div className="service-items">
@@ -40,33 +52,24 @@ const Home = () => {
         </div>
       </section>
       
-      <section className="vision-mission">
-        <div className="card">
-          <h2>Vision</h2>
-          <p>To be the CHOICE for a complete multi-specialties dental practice chosen for our heart/core values and expertise in the region.</p>
-        </div>
-        <div className="card">
-          <h2>Mission</h2>
-          <p>We sharpen smiles and build good and long-lasting relationships with our patients.</p>
-          <p>We gently work with our patients towards their best dental experience; always focused on alleviating their anxieties and fears. We value and continually build on our patients' trust in our integrity, our expertise, and our genuine care for their well-being.</p>
-          <p>To deliver excellent quality of clinical dental care to our patients with the most current know-how.</p>
-          <p>We sharpen smiles and build good long-lasting relationships with other dental community.</p>
-          <p>To collaborate with other dental colleagues and serve in our various dental professional bodies.</p>
-          <p>We sharpen smiles and build good long-lasting relationships with medical colleagues, laboratories and Dental support staff.</p>
-          <p>To work with our partners in developing the best dental products and services to our patients.</p>
-          <p>To invite our partners to grow with us by innovative and introducing new technologies for the betterment of our patients.</p>
-        </div>
-      </section>
-      
-      <section className="core-values">
-        <div className="card">
-          <h2>Core Values</h2>
-          <p>The dental patient is at the center of everything we do and believe in.</p>
-          <p>We seek to upgrade our knowledge and skills for the benefit of providing excellent and most caring dental services possible for our patients.</p>
-          <p>We work as a team and uphold our professional responsibilities and integrity with customized treatment plans and no overtreatment.</p>
+      <section className="testimonials">
+        <h2>What Our Patients Say</h2>
+        <div className="testimonial-items">
+          <div className="testimonial-item">
+            <p>"Lonestar Dental Care has transformed my smile! The staff is incredibly friendly and professional. I highly recommend their services."</p>
+            <p>- John Doe</p>
+          </div>
+          <div className="testimonial-item">
+            <p>"I have never felt more comfortable at a dentist's office. The team at Lonestar Dental Care is amazing."</p>
+            <p>- Jane Smith</p>
+          </div>
+          <div className="testimonial-item">
+            <p>"The best dental experience I've ever had. The dentists are skilled, and the environment is very welcoming."</p>
+            <p>- Michael Johnson</p>
+          </div>
         </div>
       </section>
-      
+
       <section className="partners-overview">
         <h2>Our Partners</h2>
         <div className="partner-grid">

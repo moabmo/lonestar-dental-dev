@@ -17,11 +17,48 @@
 .home .banner .banner-text {
   margin-top: 20px;
   color: #333;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.home .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.home .intro .intro-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home .intro .intro-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.home .intro .intro-text {
+  flex: 1;
+  color: #333;
+}
+
+.home .intro h2 {
+  color: #9D2235;
 }
 
 .home .services-overview {
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: #f8f8f8;
   text-align: center;
   font-family: 'Comfortaa', sans-serif;
 }
@@ -46,7 +83,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f8f8f8;
+  background-color: #fff;
   transition: transform 0.3s;
 }
 
@@ -67,34 +104,49 @@
   text-decoration: none;
 }
 
-.home .vision-mission,
-.home .core-values {
+.home .vision-mission {
+  margin-top: 40px;
+}
+
+.home .vision-mission .card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.home .testimonials {
   padding: 40px 20px;
   background-color: #fff;
   text-align: center;
   font-family: 'Comfortaa', sans-serif;
 }
 
-.home .vision-mission h2,
-.home .core-values h2 {
-  margin-top: 20px;
+.home .testimonials h2 {
   color: #9D2235;
+  margin-bottom: 20px;
 }
 
-.home .vision-mission p,
-.home .core-values p {
-  margin: 10px 0;
-  color: #333;
+.home .testimonial-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.home .vision-mission .card,
-.home .core-values .card {
+.home .testimonial-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f8f8f8;
-  margin-bottom: 20px;
 }
 
 .home .partners-overview {
@@ -152,4 +204,33 @@
 .home .social-media a {
   color: #9D2235;
   text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .home .intro .intro-content {
+    flex-direction: column;
+  }
+
+  .home .service-item,
+  .home .testimonial-item {
+    min-width: 100%;
+  }
 }
