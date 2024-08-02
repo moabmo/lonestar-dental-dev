@@ -1,9 +1,7 @@
-/* Header.css */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
   background-color: #003366;
   color: white;
   font-family: 'Comfortaa', sans-serif;
@@ -11,10 +9,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+header.scrolled {
+  background-color: #001f4d;
+  padding: 5px 20px;
 }
 
 header .logo img {
-  width: 150px; /* Adjust size as needed */
+  width: 250px;
+  border-bottom-right-radius: 20px;
   height: auto;
   cursor: pointer;
 }
@@ -45,12 +50,13 @@ header nav ul li a:hover {
 }
 
 header nav ul li a:visited {
-  color: #FFD700; /* Gold color for visited links */
+  color: white; /* Gold color for visited links */
 }
 
 header nav ul li a.active {
-  color: #FFD700; /* Gold color for active link */
-  background-color: #003366;
+  color: white; /* Gold color for active link */
+  background-color: #0366c9;
+  border-radius: 10px;
   border-bottom: 2px solid #FFD700; /* Highlight the active link */
 }
 
@@ -99,7 +105,7 @@ header nav ul li a.active {
   header nav ul li a {
     color: white;
     width: 100%;
-    padding: 10px 0;
+    /* padding: 10px 0; */
   }
 
   .hamburger {
