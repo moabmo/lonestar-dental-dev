@@ -1,12 +1,14 @@
+/* Header.css */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #003366;
+  /* background-color: #003366; */
+  background-color: rgba(0, 51, 102, 0.4);
   color: white;
   font-family: 'Comfortaa', sans-serif;
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
+  position: fixed; /* Make header fixed at the top */
+  width: 100%;
   top: 0;
   z-index: 1000;
   transition: background-color 0.3s ease, padding 0.3s ease;
@@ -18,7 +20,7 @@ header.scrolled {
 }
 
 header .logo img {
-  width: 250px;
+  width: 35%;
   border-bottom-right-radius: 20px;
   height: auto;
   cursor: pointer;
@@ -50,11 +52,11 @@ header nav ul li a:hover {
 }
 
 header nav ul li a:visited {
-  color: white; /* Gold color for visited links */
+  color: white;
 }
 
 header nav ul li a.active {
-  color: white; /* Gold color for active link */
+  color: white;
   background-color: #0366c9;
   border-radius: 10px;
   border-bottom: 2px solid #FFD700; /* Highlight the active link */
@@ -115,4 +117,5 @@ header nav ul li a.active {
   .hamburger .bar {
     background-color: white;
   }
+  
 }

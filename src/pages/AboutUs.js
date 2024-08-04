@@ -22,6 +22,7 @@ const AboutUs = () => {
 
   return (
     <div className="about-us">
+    <br/><br/>
       <h1>About Us</h1>
       <section className="about-content">
         <div className="card">
