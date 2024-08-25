@@ -1,8 +1,14 @@
-/* Booking.css */
 .booking {
   padding: 40px;
   text-align: center;
   font-family: 'Comfortaa', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
+  background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), 
+              url('/public/assets/images/sample.png'); /* Add semi-transparent overlay over the image */
+  background-size: cover; /* Make sure the image covers the entire page */
+  background-attachment: fixed; /* Make the background fixed */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
 .booking h2 {
@@ -25,6 +31,8 @@
 .booking label {
   display: block;
   margin-bottom: 15px;
+  text-align: left;
+  text-align: center;
 }
 
 .booking input[type="text"],
@@ -33,18 +41,20 @@
 .booking input[type="date"],
 .booking select,
 .booking textarea {
-  width: 100%;
+  width: calc(100% - 20px); /* Uniform width with padding and margin considered */
   padding: 10px;
-  margin-top: 5px;
+  margin: 5px 10px; /* 10px on left and right to ensure consistent spacing */
   border: 1px solid #ddd;
   border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .booking input[type="text"].error-input,
 .booking input[type="email"].error-input,
 .booking input[type="tel"].error-input,
 .booking input[type="date"].error-input,
-.booking select.error-input {
+.booking select.error-input,
+.booking textarea.error-input {
   border: 1px solid #ff0000;
   background-color: #ffcccc;
 }
@@ -52,6 +62,7 @@
 .error-message {
   color: #ff0000;
   font-size: 12px;
+  margin-top: 5px;
 }
 
 .custom-dropdown {
@@ -100,6 +111,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
+  width: calc(100% - 20px);
 }
 
 .booking button:hover {

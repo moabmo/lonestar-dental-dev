@@ -5,97 +5,97 @@ const services = [
   {
     title: "Masking",
     description: "Masking dental imperfections.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teeth_masking.jpg",
     details: "Masking involves using dental materials to cover and improve the appearance of discolored, damaged, or irregular teeth, providing a more aesthetically pleasing smile."
   },
   {
     title: "Management of Facial Trauma",
     description: "Managing and treating facial trauma.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teeth_management_of_facial_trauma.jpg",
     details: "Our team provides comprehensive care for facial trauma, including fractures, lacerations, and soft tissue injuries, ensuring both functional and aesthetic recovery."
   },
   {
     title: "Braces Installation",
     description: "Installation of braces for orthodontic treatment.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/braces_installation.jpg",
     details: "We offer braces installation to correct misaligned teeth and jaws, improving both functionality and appearance. Our orthodontic services are tailored to meet the needs of both children and adults."
   },
   {
     title: "Implants",
     description: "Dental implants to replace missing teeth.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teeth_implantation.jpg",
     details: "Dental implants provide a permanent solution for missing teeth. They are designed to blend seamlessly with your natural teeth, restoring both function and aesthetics."
   },
   {
     title: "Replacement (Crown & Bridge)",
     description: "Replacement of teeth with crowns and bridges.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teeth_replacement_crown_and_bridge.jpg",
     details: "We offer crown and bridge replacements to restore damaged or missing teeth. Crowns cover and protect damaged teeth, while bridges fill the gaps left by missing teeth."
   },
   {
     title: "Root Canal Treatment",
     description: "Treatment of root canal infections.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/root_canal_treatment.jpg",
     details: "Root canal treatment involves removing infected or damaged tissue from inside the tooth, relieving pain, and preventing further infection while preserving the natural tooth."
   },
   {
     title: "Cleaning (Scaling & Polishing)",
     description: "Professional dental cleaning (scaling and polishing).",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teeth_scaling_and_polishing.jpg",
     details: "Our professional cleaning services include scaling to remove plaque and tartar and polishing to smooth and shine the teeth, promoting oral health and preventing decay."
   },
   {
     title: "Tooth Extraction (Children & Adults)",
     description: "Tooth extraction services for children and adults.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teeth_extraction.jpg",
     details: "We provide safe and comfortable tooth extraction services for both children and adults, addressing issues such as decay, infection, or overcrowding."
   },
   {
     title: "Full Mouth Examination",
     description: "Comprehensive examination of your oral health.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/full_mouth_examination.jpg",
     details: "A full mouth examination involves a thorough assessment of your oral health, including teeth, gums, and mouth tissues, to detect any issues and plan appropriate treatments."
   },
   {
     title: "Tooth Whitening",
     description: "Professional tooth whitening services.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teethwhitening.jpg",
     details: "Our tooth whitening services use safe and effective techniques to lighten the color of your teeth, removing stains and enhancing the brightness of your smile."
   },
   {
     title: "Filling (Permanent & Temporary)",
     description: "Dental fillings, both permanent and temporary.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teeth_filling.jpg",
     details: "We offer both permanent and temporary fillings to restore teeth damaged by decay. Our fillings are designed to match the natural color of your teeth for a seamless appearance."
   },
   {
     title: "Same Day Emergency",
     description: "Emergency dental services for immediate care.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/same_day_emergency.jpg",
     details: "Our same day emergency services provide immediate care for urgent dental issues, such as severe pain, injury, or infection, ensuring prompt relief and treatment."
   },
   {
     title: "Dental Cleaning",
     description: "Routine dental cleaning services.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teeth_cleaning.jpg",
     details: "Routine dental cleaning helps maintain oral health by removing plaque and tartar buildup, preventing cavities, gum disease, and other dental issues."
   },
   {
     title: "Teeth Replacement",
     description: "Replacement of missing teeth.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/teethreplacement.jpg",
     details: "Our teeth replacement services include options such as implants, bridges, and dentures, tailored to restore functionality and aesthetics for missing teeth."
   },
   {
     title: "Tooth Alignment",
     description: "Orthodontic treatment for tooth alignment.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/toothalignment.jpg",
     details: "We provide orthodontic treatments to correct tooth misalignment, using braces or clear aligners to improve bite and appearance."
   },
   {
     title: "Tooth Jewelry",
     description: "Cosmetic tooth jewelry services.",
-    image: "/assets/images/sample.png",
+    image: "/assets/images/toothjewelry.jpg",
     details: "Our tooth jewelry services add a touch of sparkle to your smile with safe and stylish decorative elements applied to the teeth."
   }
 ];
