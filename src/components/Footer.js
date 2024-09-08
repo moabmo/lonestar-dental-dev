@@ -11,7 +11,7 @@ const Footer = () => {
         <p>© 2024 Lonestar Dental Care. All rights reserved.</p>
         <address>
           <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Address: Kitengela, Kenya</p>
-          <p><FontAwesomeIcon icon={faWhatsapp} /> Phone: +254 123 456 789</p>
+          <p><FontAwesomeIcon icon={faWhatsapp} /> Phone: +254 792 056 862</p>
           <p><FontAwesomeIcon icon={faEnvelope} /> Email: info@lonestardentalcare.com</p>
         </address>
         <div className="social-links">

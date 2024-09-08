@@ -1,6 +1,6 @@
 .home {
   font-family: 'Comfortaa', sans-serif;
-  background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), 
+  background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(255, 255, 255, 0.9)), 
               url('/public/assets/images/sample.png'); /* Add semi-transparent overlay over the image */
   background-size: cover; /* Make sure the image covers the entire page */
   background-attachment: fixed; /* Make the background fixed */
@@ -21,7 +21,7 @@
   height: 100vh;
   object-fit: cover;
   background-color: black;
-  opacity: 0.7; /* Added opacity to the image */
+  opacity: 1; /* Added opacity to the image */
 }
 
 .hero-overlay {
@@ -127,6 +127,7 @@
   animation: fadeInUp 1s ease-in-out;
 }
 
+/* General card styles */
 .service-item,
 .about-item,
 .testimonial-item,
@@ -138,15 +139,41 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  transition: transform 0.3s;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s; /* Smooth shadow transition */
 }
 
+/* Hover effect for cards */
 .service-item:hover,
 .about-item:hover,
 .testimonial-item:hover,
 .partner-card:hover {
-  transform: translateY(-10px);
+  background: linear-gradient(to bottom, #003366 15%, #d1ff07 15%); /* Gradient with sharp transition */
+  color: #fff; /* Text color for better contrast */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+  animation: fadeInCard 0.3s ease-in-out; /* Swift animation */
+}
+
+/* Card title color on hover */
+.service-item:hover h2,
+.about-item:hover h2,
+.testimonial-item:hover h2,
+.partner-card:hover h2 {
+  color: #f0f0f0; /* Light color for card titles on hover */
+}
+
+/* Animation for cards on hover */
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: scale(1.02); /* Slightly zoomed in at the start */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1); /* Return to normal size */
+  }
 }
 
 .view-more {

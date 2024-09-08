@@ -19,8 +19,8 @@ const ContactUs = () => {
       </form>
       <div className="contact-info">
         <p>Address: Kitengela, Kenya</p>
-        <p>Phone: +254 123 456 789</p>
-        <p>Email: info@lonestardentalcare.com</p>
+        <p>Phone: +254 792 056 862</p>
+        <p>Email: info@lonestardentalcare.co.ke</p>
       </div>
     </div>
   );

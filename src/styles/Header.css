@@ -1,24 +1,29 @@
-/* Header.css */
+/* General Header Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #003366; */
   background-color: rgba(0, 51, 102, 0.4);
   color: white;
-  font-family: 'Comfortaa', sans-serif;
-  position: fixed; /* Make header fixed at the top */
+  font-family: 'Poppins', sans-serif;
+  position: relative;
   width: 100%;
   top: 0;
   z-index: 1000;
   transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
+/* Header styles when scrolled */
 header.scrolled {
   background-color: #001f4d;
-  /* padding: 5px 20px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
 }
 
+/* Header logo styles */
 header .logo img {
   width: 35%;
   border-bottom-right-radius: 20px;
@@ -29,37 +34,37 @@ header .logo img {
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
   margin: 0;
 }
 
 header nav ul li {
   margin: 0;
+  position: relative;
 }
 
 header nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 7px 4px;
   transition: color 0.3s ease, background-color 0.3s ease;
+  white-space: nowrap;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+  position: relative;
 }
 
 header nav ul li a:hover {
-  color: #003366;
-  background-color: #9D2235;
+  background-color: #003366;
   border-radius: 5px;
-}
-
-header nav ul li a:visited {
-  color: white;
 }
 
 header nav ul li a.active {
   color: white;
-  background-color: #0366c9;
   border-radius: 10px;
-  border-bottom: 2px solid #FFD700; /* Highlight the active link */
+  border-bottom: 2px solid #FFD700;
 }
 
 .hamburger {
@@ -76,6 +81,7 @@ header nav ul li a.active {
   margin: 4px 0;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   header nav {
     position: absolute;
@@ -86,7 +92,7 @@ header nav ul li a.active {
     display: none;
     flex-direction: column;
     align-items: center;
-    z-index: 9;
+    z-index: 10;
   }
 
   header nav.nav-open {
@@ -107,7 +113,12 @@ header nav ul li a.active {
   header nav ul li a {
     color: white;
     width: 100%;
-    /* padding: 10px 0; */
+    padding: 10px 0;
+    position: relative;
+  }
+
+  header nav ul li a.active {
+    border-bottom: 2px solid #FFD700;
   }
 
   .hamburger {
@@ -117,5 +128,43 @@ header nav ul li a.active {
   .hamburger .bar {
     background-color: white;
   }
-  
+
+  /* Hide info-line on smaller screens */
+  .info-line {
+    display: none; /* Hide the info-line */
+  }
+}
+
+/* Default Styles for Info Line */
+.info-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #333;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+header.scrolled .info-line {
+  display: none; /* Hide info-line on scroll */
+}
+
+@media (max-width: 1023px) {
+  .info-line {
+    top: 60px; /* Position below the header on smaller screens */
+  }
+}
+/* Hide the info-line on smaller screens */
+@media (max-width: 768px) {
+  .info-line {
+    display: none !important; /* Use !important to override any conflicting styles */
+  }
 }
