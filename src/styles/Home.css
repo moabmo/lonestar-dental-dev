@@ -142,7 +142,16 @@
   background: #fff;
   position: relative;
   overflow: hidden;
-  transition: box-shadow 0.3s; /* Smooth shadow transition */
+  transition: box-shadow 0.3s, background 0.3s; /* Smooth shadow and background transition */
+  color: #003366; /* Default text color */
+}
+
+.service-item a,
+.about-item a,
+.testimonial-item a,
+.partner-card a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
 }
 
 /* Hover effect for cards */
@@ -150,30 +159,18 @@
 .about-item:hover,
 .testimonial-item:hover,
 .partner-card:hover {
-  background: linear-gradient(to bottom, #003366 15%, #d1ff07 15%); /* Gradient with sharp transition */
+  background: linear-gradient(to bottom, #FFD700 10%, #003366 10%); /* Gradient with gold and blue theme */
   color: #fff; /* Text color for better contrast */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
-  animation: fadeInCard 0.3s ease-in-out; /* Swift animation */
+  transform: scale(1.02); /* Slight zoom effect on hover */
 }
 
 /* Card title color on hover */
-.service-item:hover h2,
-.about-item:hover h2,
-.testimonial-item:hover h2,
-.partner-card:hover h2 {
-  color: #f0f0f0; /* Light color for card titles on hover */
-}
-
-/* Animation for cards on hover */
-@keyframes fadeInCard {
-  from {
-    opacity: 0;
-    transform: scale(1.02); /* Slightly zoomed in at the start */
-  }
-  to {
-    opacity: 1;
-    transform: scale(1); /* Return to normal size */
-  }
+.service-item:hover h3,
+.about-item:hover h3,
+.testimonial-item:hover h3,
+.partner-card:hover h3 {
+  color: #fff; /* White color for card titles on hover */
 }
 
 .view-more {

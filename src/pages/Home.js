@@ -41,16 +41,20 @@ const Home = () => {
         <h2>Our Services</h2>
         <div className="service-items">
           <div className="service-item">
-            <h3><Link to="/services#general-dentistry">General Dentistry</Link></h3>
+          <Link to="/services#general-dentistry">
+            <h3>General Dentistry</h3>
             <p>Regular checkups, cleanings, fillings, extractions, and diagnostic procedures.</p>
+            </Link>
           </div>
           <div className="service-item">
-            <h3><Link to="/services#restorative-dentistry">Restorative Dentistry</Link></h3>
+            <Link to="/services#restorative-dentistry"><h3>Restorative Dentistry</h3>
             <p>Fillings, crowns, bridges, and implants to restore function and aesthetics.</p>
+            </Link>
           </div>
           <div className="service-item">
-            <h3><Link to="/services#cosmetic-dentistry">Cosmetic Dentistry</Link></h3>
+            <Link to="/services#cosmetic-dentistry"><h3>Cosmetic Dentistry</h3>
             <p>Teeth whitening, veneers, and bonding to enhance the appearance of your smile.</p>
+            </Link>
           </div>
         </div>
         <div className="view-more">
