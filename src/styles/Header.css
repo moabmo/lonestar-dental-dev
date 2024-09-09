@@ -21,14 +21,6 @@ header {
 /* Header styles when scrolled */
 header.scrolled {
   background-color: white; /* Solid background color when scrolled */
-  border-bottom-left-radius: 20px; /* Rounded bottom corners */
-  border-bottom-right-radius: 20px; /* Rounded bottom corners */
-}
-
-
-/* Header styles when scrolled */
-header.scrolled {
-  background-color: white; /* Background changes to white when scrolled */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add shadow on scroll */
   border-bottom-left-radius: 20px; /* Rounded corners */
   border-bottom-right-radius: 20px;
@@ -36,7 +28,7 @@ header.scrolled {
 
 /* Logo styles */
 header .logo img {
-  width: 150px; /* Adjust size as needed */
+  width: 150px; /* Default size for larger screens */
   height: auto;
   cursor: pointer;
 }
@@ -110,7 +102,7 @@ header nav ul li a.active {
 
   header nav {
     position: absolute;
-    top: 60px; /* Position below header */
+    top: 100%; /* Position below header */
     left: 0;
     right: 0;
     background-color: rgb(240, 240, 240); /* White background for mobile menu */
@@ -139,10 +131,14 @@ header nav ul li a.active {
     color: #011f5f; /* Dark blue text for links on mobile */
     width: 100%;
     padding: 10px 0;
-
   }
 
   header nav ul li a.active {
     border-bottom: 2px solid #FFD700;
+  }
+
+  /* Larger logo on smaller screens */
+  header .logo img {
+    width: 70%; /* Increase logo size on smaller screens */
   }
 }
