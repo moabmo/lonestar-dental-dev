@@ -4,7 +4,6 @@ import '../styles/ContactUs.css';
 const ContactUs = () => {
   return (
     <div className="contact-us">
-    <br/><br/>
       <h2>Contact Us</h2>
       <form>
         <label>Name</label>
