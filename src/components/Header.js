@@ -1,52 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/Header.css';
-import { FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import '../styles/Header.css'; // Ensure your CSS file path is correct
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   useEffect(() => {
     const handleScroll = () => {
+      // Check if the window has been scrolled down more than 50px
       setIsScrolled(window.scrollY > 50);
     };
 
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024);
-    };
-
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return (
     <header className={`${isScrolled ? 'scrolled' : ''} ${isOpen ? 'nav-open' : ''}`}>
-      {(isLargeScreen || !isScrolled) && (
-        <div className="info-line">
-          <div className="info-text">
-            <span className="info-item">
-              <FaMapMarkerAlt /> Kitengela, Kenya
-            </span>
-            <span className="info-item">
-              <FaPhone /> +254 792 056 862
-            </span>
-          </div>
-        </div>
-      )}
       <div className="logo">
         <NavLink to="/">
-          <img src={process.env.PUBLIC_URL + '/assets/images/logo.jpg'} alt="Lonestar Dental Care" />
+          <img src={process.env.PUBLIC_URL + '/assets/images/logo.png'} alt="Lonestar Dental Care" />
         </NavLink>
       </div>
       <nav className={isOpen ? 'nav-open' : ''}>
