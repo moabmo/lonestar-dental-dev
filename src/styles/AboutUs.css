@@ -32,21 +32,35 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right,#003366 1%, #fff 1%);
   background-color: #fff;
-  color: #333;
+  color: #000000;
 }
 
 .about-content .card h2 {
   color: #9D2235;
   margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 .about-content .card p {
-  color: #333;
+  color: #011f5f; /* Theme blue color for initial text */
+  transition: color 0.3s ease; /* Transition for color change */
 }
 
+/* Apply hover styles to the text elements inside the cards, excluding headings */
+.about-content .card:hover p {
+  color: white; /* Change text color to white on hover */
+}
+
+/* Change h2 color to gold/yellow on hover */
+.about-content .card:hover h2 {
+  color: #FFD700; /* Theme yellow/gold color */
+}
+
+/* Apply the gradient background on card hover */
 .about-content .card:hover {
-  background: linear-gradient(to bottom, rgba(1, 31, 95) 7%, rgba(255, 215, 0) 7%);
+  background: linear-gradient(to right,#003366 1%, #003366 1%);
 }
 
 .about-content .card.fade-in {

@@ -8,7 +8,6 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
-        <p>© 2024 Lonestar Dental Care. All rights reserved.</p>
         <address>
           <div className="icon-text">
             <FontAwesomeIcon icon={faMapMarkerAlt} />
@@ -32,7 +31,8 @@ const Footer = () => {
           </a>
           <a href="https://www.instagram.com/_lonestardentalcare" target='_blank' rel="noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
-          </a>
+          </a>          
+        <p>© 2024 Lonestar Dental Care. All rights reserved.</p>
         </div>
       </div>
     </footer>

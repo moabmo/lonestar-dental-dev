@@ -73,7 +73,9 @@ header nav ul li a:hover {
 /* Active link styles */
 header nav ul li a.active {
   border-bottom: 3px solid #FFD700;
+  background-color: #FFD700;
   color: #011f5f;
+  
 }
 
 /* Hamburger menu styles for mobile */
@@ -135,6 +137,7 @@ header nav ul li a.active {
 
   header nav ul li a.active {
     border-bottom: 2px solid #FFD700;
+    background-color: #FFD700;
   }
 
   /* Larger logo on smaller screens */

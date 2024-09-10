@@ -1,5 +1,5 @@
 // AdjustContent.js
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 
 const adjustContentPosition = () => {
   const header = document.querySelector('header');
@@ -12,8 +12,8 @@ const adjustContentPosition = () => {
 };
 
 const AdjustContent = () => {
-  useEffect(() => {
-    // Adjust position on initial load
+  useLayoutEffect(() => {
+    // Adjust position immediately on component load
     adjustContentPosition();
 
     // Adjust position on window resize
