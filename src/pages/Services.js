@@ -101,6 +101,7 @@ const services = [
 ];
 
 const Services = () => {
+  const [hoveredService, setHoveredService] = useState(null);
   const [selectedService, setSelectedService] = useState(null);
 
   const openPopup = (service) => {
@@ -118,11 +119,22 @@ const Services = () => {
       <h1>Our Services</h1>
       <div className="service-cards">
         {services.map((service, index) => (
-          <div className="service-card" key={index} onClick={() => openPopup(service)}>
-            <img src={process.env.PUBLIC_URL + service.image} alt={service.title} />
-            <hr />
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
+          <div
+            className={`service-card ${hoveredService === index ? 'hovered' : ''}`}
+            key={index}
+            onClick={() => openPopup(service)}
+            onMouseEnter={() => setHoveredService(index)}
+            onMouseLeave={() => setHoveredService(null)}
+          >
+            <img
+              src={process.env.PUBLIC_URL + service.image}
+              alt={service.title}
+              className={hoveredService === index ? 'hidden' : ''}
+            />
+            <div className={`content ${hoveredService === index ? 'show' : ''}`}>
+              <h3>{service.title}</h3>
+              <p>{hoveredService === index ? service.details : service.description}</p>
+            </div>
           </div>
         ))}
       </div>

@@ -1,34 +1,107 @@
-/* Partners.css */
-.partners {
-    padding: 40px;
-    background-color: #f8f8f8;
+.partners-overview {
+  padding: 20px 0;
+  text-align: center; /* Centers the text */
+}
+
+.partners-overview h2 {
+  color: #9D2235; /* Sets the text color to #9D2235 */
+  margin-bottom: 20px; /* Adds some space below the heading */
+}
+
+.partner-scroll {
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap to the next line */
+  overflow-x: auto; /* Allows horizontal scrolling */
+  padding: 10px 0;
+  justify-content: center; /* Centers the images horizontally */
+  gap: 10px; /* Adds space between images */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #ddd transparent; /* Custom scrollbar color */
+}
+
+.partner-scroll::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height */
+}
+
+.partner-scroll::-webkit-scrollbar-thumb {
+  background-color: #ddd; /* Scrollbar color */
+  border-radius: 4px;
+}
+
+.partner-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.partner-card {
+  flex: 1 1 200px; /* Adjusts the card size; ensures cards don't overlap */
+  position: relative; /* For positioning the hover text */
+  box-sizing: border-box;
+  background-color: #f0f0f0; /* Background color to complement full width */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures content doesn’t overflow */
+}
+
+.partner-image {
+  width: 100%; /* Ensures image fits within its card */
+  height: auto; /* Ensures image height scales with width */
+  max-height: 15vh; /* Sets a maximum height to avoid large images */
+  object-fit: cover; /* Ensures images cover the div without stretching */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.partner-image:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+}
+
+.partner-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Prevents hover issues */
+}
+
+.partner-card:hover .partner-name {
+  opacity: 1; /* Shows the name on hover */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .partner-scroll {
+    flex-direction: row; /* Align images in a row */
+    justify-content: start; /* Aligns items to the start (left) */
   }
-  
-  .partners h2 {
-    text-align: center;
-    color: #9D2235;
-    margin-bottom: 40px;
-  }
-  
-  .partners .partner-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
+
   .partner-card {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* Adjusts flex basis to take up to 30% of the width */
+    max-width: 150px; /* Sets maximum width for each card */
   }
-  
-  .partner-card img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
+
+  .partner-image {
+    max-height: 20vh; /* Adjusts height for better fit on smaller screens */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .partner-scroll {
+    flex-direction: column; /* Stacks images vertically on very small screens */
+    align-items: center; /* Centers images horizontally */
+  }
+
+  .partner-card {
+    flex: 1 1 100%; /* Ensures card takes full width */
+    max-width: 100%; /* Full width for each card */
+    margin-bottom: 10px; /* Adds space between vertically stacked images */
+  }
+
+  .partner-image {
+    max-height: 25vh; /* Increases height for very small screens */
+  }
+}

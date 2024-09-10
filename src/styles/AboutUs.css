@@ -59,8 +59,8 @@
 }
 
 /* Apply the gradient background on card hover */
-.about-content .card:hover {
-  background: linear-gradient(to right,#003366 1%, #003366 1%);
+.about-content .card:hover {  
+  background: linear-gradient(to right, #FFD700 1%, #003366 1.5%);
 }
 
 .about-content .card.fade-in {

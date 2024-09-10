@@ -1,4 +1,3 @@
-// AdjustContent.js
 import { useLayoutEffect } from 'react';
 
 const adjustContentPosition = () => {
@@ -19,11 +18,12 @@ const AdjustContent = () => {
     // Adjust position on window resize
     window.addEventListener('resize', adjustContentPosition);
 
-    // Cleanup event listener on component unmount
+    // Ensure to adjust position on initial render in case of changes after the component mounts
+    // and handle the cleanup of event listeners
     return () => {
       window.removeEventListener('resize', adjustContentPosition);
     };
-  }, []);
+  }, []); // Dependency array remains empty to only run on mount and unmount
 
   return null; // This component doesn't render anything visually
 };

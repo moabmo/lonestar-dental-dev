@@ -15,18 +15,18 @@ footer .footer-content {
 
 footer .footer-content p {
   margin: 5px 0;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 footer address p {
   margin: 10px 0;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 footer address .icon-text {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 footer address .icon-text svg {

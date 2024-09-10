@@ -8,7 +8,7 @@ header {
   border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
   border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
   color: #011f5f;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Comfortaa', sans-serif; /* Changed to Comfortaa */
   position: fixed; /* Keep header fixed at the top */
   width: 100%;
   top: 0;
@@ -53,11 +53,12 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #011f5f; /* Gold color before scroll */
+  color: #011f5f; /* Dark blue color before scroll */
   font-weight: bold;
   padding: 7px 10px;
   transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 5px; /* Slight rounding for links */
+  font-family: 'Comfortaa', sans-serif; /* Changed to Comfortaa */
 }
 
 /* Link styles after scroll */
@@ -75,7 +76,7 @@ header nav ul li a.active {
   border-bottom: 3px solid #FFD700;
   background-color: #FFD700;
   color: #011f5f;
-  
+  padding: 10px 20px; /* Added extra padding to left and right for active link */
 }
 
 /* Hamburger menu styles for mobile */
@@ -138,6 +139,8 @@ header nav ul li a.active {
   header nav ul li a.active {
     border-bottom: 2px solid #FFD700;
     background-color: #FFD700;
+    color: #011f5f;
+    padding: 15px 20px; /* Increase padding for better touch area on mobile */
   }
 
   /* Larger logo on smaller screens */

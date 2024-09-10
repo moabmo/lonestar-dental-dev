@@ -1,15 +1,9 @@
+// src/components/Home.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
-
-const partners = [
-  { name: 'Jubilee Insurance', image: '/assets/images/jubilee.jpg' },
-  { name: 'AAR Insurance', image: '/assets/images/aar.png' },
-  { name: 'Livia Insurance', image: '/assets/images/livia.jpg' },
-  { name: 'CarePay Insurance', image: '/assets/images/carepay.png' },
-  { name: 'Old Mutual Insurance', image: '/assets/images/oldmutual.jpg' },
-  { name: 'Pacific Insurance', image: '/assets/images/pacific.png' }
-];
+import Partners from './Partners'; // Import the Partners component
 
 const Home = () => {
   return (
@@ -41,19 +35,21 @@ const Home = () => {
         <h2>Our Services</h2>
         <div className="service-items">
           <div className="service-item">
-          <Link to="/services#general-dentistry">
-            <h3>General Dentistry</h3>
-            <p>Regular checkups, cleanings, fillings, extractions, and diagnostic procedures.</p>
+            <Link to="/services#general-dentistry">
+              <h3>General Dentistry</h3>
+              <p>Regular checkups, cleanings, fillings, extractions, and diagnostic procedures.</p>
             </Link>
           </div>
           <div className="service-item">
-            <Link to="/services#restorative-dentistry"><h3>Restorative Dentistry</h3>
-            <p>Fillings, crowns, bridges, and implants to restore function and aesthetics.</p>
+            <Link to="/services#restorative-dentistry">
+              <h3>Restorative Dentistry</h3>
+              <p>Fillings, crowns, bridges, and implants to restore function and aesthetics.</p>
             </Link>
           </div>
           <div className="service-item">
-            <Link to="/services#cosmetic-dentistry"><h3>Cosmetic Dentistry</h3>
-            <p>Teeth whitening, veneers, and bonding to enhance the appearance of your smile.</p>
+            <Link to="/services#cosmetic-dentistry">
+              <h3>Cosmetic Dentistry</h3>
+              <p>Teeth whitening, veneers, and bonding to enhance the appearance of your smile.</p>
             </Link>
           </div>
         </div>
@@ -61,7 +57,7 @@ const Home = () => {
           <Link to="/services" className="btn secondary-btn">View More Services</Link>
         </div>
       </section>
-      
+
       <section className="about-overview">
         <h2>About Us</h2>
         <div className="about-items">
@@ -78,7 +74,7 @@ const Home = () => {
           <Link to="/about" className="btn secondary-btn">Learn More About Us</Link>
         </div>
       </section>
-      
+
       <section className="testimonials">
         <h2>What Our Patients Say</h2>
         <div className="testimonial-items">
@@ -97,17 +93,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="partners-overview">
-        <h2>Our Partners</h2>
-        <div className="partner-grid">
-          {partners.map((partner, index) => (
-            <div className="partner-card" key={index}>
-              <img src={process.env.PUBLIC_URL + partner.image} alt={partner.name} className="partner-image" />
-              <p>{partner.name}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Include the Partners component */}
+      <Partners />
     </div>
   );
 };
