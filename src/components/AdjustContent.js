@@ -5,27 +5,27 @@ const adjustContentPosition = () => {
   const mainContent = document.querySelector('.main-content');
 
   if (header && mainContent) {
-    // Set the padding-top to the header's height
+    // Adjust padding-top to match the header height
     mainContent.style.paddingTop = `${header.offsetHeight}px`;
   }
 };
 
 const AdjustContent = () => {
   useLayoutEffect(() => {
-    // Adjust position immediately on component load
     adjustContentPosition();
 
-    // Adjust position on window resize
-    window.addEventListener('resize', adjustContentPosition);
-
-    // Ensure to adjust position on initial render in case of changes after the component mounts
-    // and handle the cleanup of event listeners
-    return () => {
-      window.removeEventListener('resize', adjustContentPosition);
+    const handleResize = () => {
+      adjustContentPosition();
     };
-  }, []); // Dependency array remains empty to only run on mount and unmount
 
-  return null; // This component doesn't render anything visually
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return null; // This component doesn’t render anything
 };
 
 export default AdjustContent;
