@@ -122,7 +122,6 @@ const Booking = () => {
 
   return (
     <div className="booking">
-    <br/><br/>
       <h2>Book an Appointment</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-background">

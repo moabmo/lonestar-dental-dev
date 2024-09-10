@@ -1,7 +1,6 @@
 /* ContactUs.css */
 .contact-us {
-    top: 100%;
-    padding: 20%;
+  padding-top: 0.5%;
     background-color: #fff;
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
@@ -50,5 +49,9 @@
   
   .contact-us .contact-info p {
     margin: 5px 0;
+  }
+  .contact-us .h2 {
+    color: #9D2235; /* Theme color */
+    margin-bottom: 0.5%;
   }
   

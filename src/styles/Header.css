@@ -82,7 +82,7 @@ header nav ul li a.active {
   flex-direction: column;
   cursor: pointer;
   z-index: 10;
-  background-color: #f9bb0d; /* Ensure visibility with contrasting color */
+  background-color: #011f5f; /* Ensure visibility with contrasting color */
   padding: 5px; /* Add padding for better click area */
   border-radius: 5px; /* Slight rounding for the button */
 }
@@ -90,7 +90,7 @@ header nav ul li a.active {
 .hamburger .bar {
   width: 25px;
   height: 3px;
-  background-color: #011f5f; /* Ensure color contrasts with background */
+  background-color: #FFD700; /* Ensure color contrasts with background */
   margin: 4px 0;
 }
 

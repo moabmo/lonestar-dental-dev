@@ -1,6 +1,5 @@
 .about-us {
-  top: 100%;
-  padding: 40px 20px;
+  padding: 0.5% 20px;
   font-family: 'Comfortaa', sans-serif;
   text-align: center;
   background-color: #f8f8f8;
@@ -14,7 +13,7 @@
 
 .about-us h1 {
   color: #9D2235;
-  margin-bottom: 20px;
+  margin-bottom: 0.5%;
 }
 
 .about-content {

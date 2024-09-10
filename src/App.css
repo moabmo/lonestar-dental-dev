@@ -1,4 +1,17 @@
 /* Header.css */
+/* App.css */
+.main-content {
+  padding: 0 20px; /* Side padding */
+  box-sizing: border-box; /* Ensures padding is included in width calculations */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent; /* Ensures no background behind header */
+}
+
 header {
   display: flex;
   justify-content: space-between;
