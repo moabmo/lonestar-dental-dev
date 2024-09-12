@@ -76,7 +76,7 @@
 }
 
 .secondary-btn {
-  background-color: #003366; /* Theme color */
+  background-color: #042260; /* Theme color */
   color: white;
 }
 
@@ -135,11 +135,11 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right, #003366 5%, #ffffff 5%);
+  background: linear-gradient(to right, #042260 2%, #ffffff 2%);
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s, background 0.3s; /* Smooth shadow and background transition */
-  color: #003366; /* Default text color */
+  color: #042260; /* Default text color */
 }
 
 .service-item a,
@@ -153,7 +153,7 @@
 .service-item:hover,
 .about-item:hover,
 .testimonial-item:hover{
-  background: linear-gradient(to right, #FFD700 2%, #003366 3%);
+  background: linear-gradient(to right, #FFD700 2%, #042260 3%);
   color: #fff; /* Text color for better contrast */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
   transform: scale(1.02); /* Slight zoom effect on hover */

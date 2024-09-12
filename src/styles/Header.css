@@ -75,7 +75,7 @@ header nav ul li a:hover {
 header nav ul li a.active {
   border-bottom: 3px solid #FFD700;
   background-color: #FFD700;
-  color: #011f5f;
+  color: #042260;
   padding: 10px 20px; /* Added extra padding to left and right for active link */
 }
 
@@ -85,7 +85,7 @@ header nav ul li a.active {
   flex-direction: column;
   cursor: pointer;
   z-index: 10;
-  background-color: #011f5f; /* Ensure visibility with contrasting color */
+  background-color: #042260; /* Ensure visibility with contrasting color */
   padding: 5px; /* Add padding for better click area */
   border-radius: 5px; /* Slight rounding for the button */
 }
@@ -131,7 +131,7 @@ header nav ul li a.active {
   }
 
   header nav ul li a {
-    color: #011f5f; /* Dark blue text for links on mobile */
+    color: #042260; /* Dark blue text for links on mobile */
     width: 100%;
     padding: 10px 0;
   }
@@ -139,7 +139,7 @@ header nav ul li a.active {
   header nav ul li a.active {
     border-bottom: 2px solid #FFD700;
     background-color: #FFD700;
-    color: #011f5f;
+    color: #042260;
     padding: 15px 20px; /* Increase padding for better touch area on mobile */
   }
 

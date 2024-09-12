@@ -32,7 +32,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right,#003366 1%, #fff 1%);
+  background: linear-gradient(to right,#042260 0.4%, #fff 0.5%);
   background-color: #fff;
   color: #000000;
 }
@@ -60,7 +60,7 @@
 
 /* Apply the gradient background on card hover */
 .about-content .card:hover {  
-  background: linear-gradient(to right, #FFD700 1%, #003366 1.5%);
+  background: linear-gradient(to right, #FFD700 0.4%, #042260 0.5%);
 }
 
 .about-content .card.fade-in {
