@@ -28,7 +28,7 @@
   max-width: 300px;
   padding: 0;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 12px 30px 12px 30px; /* Creative border radius */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to right, #FFD700 2%, #042260 3%);
   cursor: pointer;

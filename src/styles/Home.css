@@ -1,11 +1,11 @@
 .home {
   font-family: 'Comfortaa', sans-serif;
   background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(255, 255, 255, 0.9)), 
-              url('/public/assets/images/sample.png'); /* Add semi-transparent overlay over the image */
-  background-size: cover; /* Make sure the image covers the entire page */
-  background-attachment: fixed; /* Make the background fixed */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
+              url('/public/assets/images/sample.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero {
@@ -21,7 +21,7 @@
   height: 100vh;
   object-fit: cover;
   background-color: black;
-  opacity: 1; /* Added opacity to the image */
+  opacity: 1;
 }
 
 .hero-overlay {
@@ -30,7 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Add an overlay with 50% opacity */
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-text {
@@ -53,7 +53,7 @@
 }
 
 .home-logo {
-  width: 250px; /* Larger logo */
+  width: 250px;
   height: auto;
   margin-bottom: 20px;
 }
@@ -67,7 +67,7 @@
 }
 
 .primary-btn {
-  background-color: #9D2235; /* Theme color */
+  background-color: #9D2235;
   color: white;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .secondary-btn {
-  background-color: #042260; /* Theme color */
+  background-color: #042260;
   color: white;
 }
 
@@ -87,7 +87,7 @@
 .intro,
 .services-overview,
 .about-overview,
-.testimonials{
+.testimonials {
   padding: 60px 20px;
   text-align: center;
 }
@@ -95,15 +95,15 @@
 .intro h2,
 .services-overview h2,
 .about-overview h2,
-.testimonials h2{
-  color: #9D2235; /* Theme color */
+.testimonials h2 {
+  color: #9D2235;
   margin-bottom: 40px;
 }
 
 .intro-content,
 .service-items,
 .about-items,
-.testimonial-items{
+.testimonial-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -124,46 +124,46 @@
   animation: fadeInUp 1s ease-in-out;
 }
 
-/* General card styles */
+/* Enhanced card styles */
 .service-item,
 .about-item,
-.testimonial-item{
+.testimonial-item {
   flex: 1;
   min-width: 250px;
   max-width: 300px;
   padding: 20px;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right, #042260 2%, #ffffff 2%);
+  border-radius: 12px 30px 12px 30px; /* Creative border radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #e0e7ff, #f8f9fa); /* Background gradient before hover */
   position: relative;
   overflow: hidden;
-  transition: box-shadow 0.3s, background 0.3s; /* Smooth shadow and background transition */
-  color: #042260; /* Default text color */
+  transition: box-shadow 0.3s, background 0.3s, border-radius 0.3s;
+  color: #042260;
+}
+
+/* Hover effects without translation */
+.service-item:hover,
+.about-item:hover,
+.testimonial-item:hover {
+  background: linear-gradient(to right, #FFD700 2%, #042260 3%);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+  border-radius: 30px 12px 30px 12px; /* Reverse border radius on hover */
 }
 
 .service-item a,
 .about-item a,
-.testimonial-item a{
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Inherit text color */
-}
-
-/* Hover effect for cards */
-.service-item:hover,
-.about-item:hover,
-.testimonial-item:hover{
-  background: linear-gradient(to right, #FFD700 2%, #042260 3%);
-  color: #fff; /* Text color for better contrast */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
-  transform: scale(1.02); /* Slight zoom effect on hover */
+.testimonial-item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Card title color on hover */
 .service-item:hover h3,
 .about-item:hover h3,
-.testimonial-item:hover h3{
-  color: #fff; /* White color for card titles on hover */
+.testimonial-item:hover h3 {
+  color: #fff;
 }
 
 .view-more {
@@ -220,7 +220,7 @@
 
   .service-item,
   .about-item,
-  .testimonial-item{
+  .testimonial-item {
     min-width: 100%;
   }
 }
