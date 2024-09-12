@@ -43,9 +43,9 @@
 
 .partner-image {
   width: 100%; /* Ensures image fits within its card */
-  height: auto; /* Ensures image height scales with width */
+  height: auto; /* Maintains the aspect ratio */
   max-height: 15vh; /* Sets a maximum height to avoid large images */
-  object-fit: cover; /* Ensures images cover the div without stretching */
+  object-fit: contain; /* Ensures the entire image is visible without cropping */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
@@ -76,12 +76,13 @@
 @media (max-width: 768px) {
   .partner-scroll {
     flex-direction: row; /* Align images in a row */
-    justify-content: start; /* Aligns items to the start (left) */
+    justify-content: center; /* Centers images on smaller screens */
   }
 
   .partner-card {
     flex: 1 1 30%; /* Adjusts flex basis to take up to 30% of the width */
     max-width: 150px; /* Sets maximum width for each card */
+    margin: 0 5px; /* Adds equal margin on left and right for spacing */
   }
 
   .partner-image {
@@ -98,7 +99,7 @@
   .partner-card {
     flex: 1 1 100%; /* Ensures card takes full width */
     max-width: 100%; /* Full width for each card */
-    margin-bottom: 10px; /* Adds space between vertically stacked images */
+    margin: 0 10px 10px; /* Equal margin on the left and right */
   }
 
   .partner-image {
