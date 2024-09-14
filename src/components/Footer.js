@@ -1,8 +1,16 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faMapMarkerAlt, faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
-import '../styles/Footer.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faMapMarkerAlt,
+  faEnvelope,
+  faPhoneAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import "../styles/Footer.css";
 
 const Footer = () => {
   return (
@@ -23,17 +31,33 @@ const Footer = () => {
           </div>
         </address>
         <div className="social-links">
-          <a href="https://www.facebook.com/lonestardentalcare" target='_blank' rel="noreferrer">
+          <a
+            href="https://www.facebook.com/lonestardentalcare"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="https://twitter.com/lonestardentalcare" target='_blank' rel="noreferrer">
+          <a
+            href="https://twitter.com/lonestardentalcare"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="https://www.instagram.com/_lonestardentalcare" target='_blank' rel="noreferrer">
+          <a
+            href="https://www.instagram.com/_lonestardentalcare"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} />
-          </a>          
-        <p>© 2024 Lonestar Dental Care. All rights reserved.</p>
-        </div>
+          </a>
+        </div>{" "}
+        <br />
+        <p>
+          © 2024 <span style={{ color: "#FFD700" }}>|</span> Lonestar Dental
+          Care <span style={{ color: "#FFD700" }}>|</span> All rights reserved
+        </p>
       </div>
     </footer>
   );

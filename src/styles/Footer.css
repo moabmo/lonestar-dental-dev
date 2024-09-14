@@ -5,28 +5,34 @@ footer {
   padding: 20px;
   text-align: center;
   font-family: 'Comfortaa', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust based on your layout */
 }
 
 footer .footer-content p {
   margin: 5px 0;
-  /* font-size: 14px; */
+  /* font-size: 14px; Ensure readability */
 }
 
 footer address p {
   margin: 10px 0;
-  /* font-size: 14px; */
+  /* font-size: 14px; Ensure readability */
 }
 
 footer address .icon-text {
   display: flex;
   align-items: center;
-  /* font-size: 14px; */
+  /* font-size: 14px; Ensure readability */
+  justify-content: center; /* Center content horizontally */
 }
 
 footer address .icon-text svg {
@@ -36,11 +42,13 @@ footer address .icon-text svg {
 
 footer .social-links {
   margin-top: 10px;
+  display: flex;
+  justify-content: center; /* Center social links horizontally */
 }
 
 footer .social-links a {
   text-decoration: none;
-  color: #FFD700; /* Maroon color for icons */
+  color: #FFD700; /* Gold color for icons */
   margin: 0 10px;
   font-size: 24px;
   transition: color 0.3s ease;
@@ -48,4 +56,16 @@ footer .social-links a {
 
 footer .social-links a:hover {
   color: #ffa202; /* Gold color on hover */
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+  footer .footer-content {
+    padding: 10px;
+  }
+  
+  footer .social-links a {
+    font-size: 20px; /* Adjust icon size on smaller screens */
+    margin: 0 8px; /* Adjust spacing */
+  }
 }
