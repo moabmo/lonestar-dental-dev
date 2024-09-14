@@ -95,6 +95,7 @@ const Booking = () => {
       time,
       services: selectedServices || [], // Ensure services is an array
       message,
+      submissionDate: new Date() // Add submission date
     };
 
     try {
@@ -234,12 +235,11 @@ const Booking = () => {
             Message:
             <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
           </label>
-          {errors.message && <span className="error-message">{errors.message}</span>}
-          <button type="submit">Book Appointment</button>
+          <button type="submit">Submit</button>
           {errors.form && <span className="error-message">{errors.form}</span>}
         </div>
       </form>
-      <ToastContainer /> {/* Add ToastContainer to render toasts */}
+      <ToastContainer />
     </div>
   );
 };
