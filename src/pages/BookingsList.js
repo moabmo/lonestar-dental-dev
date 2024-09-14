@@ -79,6 +79,8 @@ const BookingsList = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-input"
       />
+
+      {/* Table for larger screens */}
       <table>
         <thead>
           <tr>
@@ -91,7 +93,7 @@ const BookingsList = () => {
             <th>Services</th>
             <th>Message</th>
             <th>Submission Date</th>
-            <th>Submission Time</th> {/* New Column for Submission Time */}
+            <th>Submission Time</th>
           </tr>
         </thead>
         <tbody>
@@ -106,11 +108,29 @@ const BookingsList = () => {
               <td>{(booking.services || []).join(', ')}</td>
               <td>{booking.message}</td>
               <td>{booking.submissionDate ? new Date(booking.submissionDate.toDate()).toLocaleDateString() : 'N/A'}</td>
-              <td>{booking.submissionDate ? new Date(booking.submissionDate.toDate()).toLocaleTimeString() : 'N/A'}</td> {/* Display Submission Time */}
+              <td>{booking.submissionDate ? new Date(booking.submissionDate.toDate()).toLocaleTimeString() : 'N/A'}</td>
             </tr>
           ))}
         </tbody>
       </table>
+
+      {/* Card layout for smaller screens */}
+      {currentBookings.map((booking, index) => (
+  <div key={booking.id} className="booking-card">
+    <div data-label="Name:"><span>{booking.name}</span></div>
+    <div data-label="Email:"><span>{booking.email}</span></div>
+    <div data-label="Phone:"><span>{booking.phone}</span></div>
+    <div data-label="Date:"><span>{booking.date}</span></div>
+    <div data-label="Time:"><span>{booking.time}</span></div>
+    <div data-label="Services:"><span>{(booking.services || []).join(', ')}</span></div>
+    <div data-label="Message:"><span>{booking.message}</span></div>
+    <div data-label="Submission Date:"><span>{booking.submissionDate ? new Date(booking.submissionDate.toDate()).toLocaleDateString() : 'N/A'}</span></div>
+    <div data-label="Submission Time:"><span>{booking.submissionDate ? new Date(booking.submissionDate.toDate()).toLocaleTimeString() : 'N/A'}</span></div>
+    <div className="serial-number">{indexOfFirstBooking + index + 1}</div> {/* Serial number */}
+  </div>
+))}
+
+
       <div className="pagination-controls">
         <div className="pagination-buttons">
           <button

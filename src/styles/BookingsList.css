@@ -117,16 +117,75 @@ table tr:hover {
     justify-content: center;
 }
 
+/* Updated CSS for Booking Cards */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     table {
-        width: 90%; /* Adjust width for smaller screens */
+        display: none; /* Hide the table on small screens */
     }
 
-    .pagination-buttons {
-        flex-direction: column;
+    .booking-card {
+        display: block;
+        width: 90%; /* 90% of the screen width */
+        margin: 0 auto 10px auto; /* Center the card horizontally */
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 12px; /* Fancy border radius for cards */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for cards */
+        background: linear-gradient(to bottom right, #ffffff, #f9f9f9); /* Gradient background for cards */
+        transition: background 0.3s ease; /* Smooth transition for background color */
+        position: relative; /* Position relative to allow absolute positioning of serial number */
+        text-align: left; /* Left align text inside the card */
     }
 
-    .row-selector {
-        margin-bottom: 10px; /* Margin below the row selector for smaller screens */
+    .booking-card:hover {
+        background: linear-gradient(to bottom right, #f2f2f2, #e0e0e0); /* Gradient background on hover */
+    }
+
+    .booking-card div {
+        margin-bottom: 8px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between; /* Align label and content on the same line */
+    }
+
+    .booking-card div::before {
+        content: attr(data-label); /* Use data-label for the header text */
+        font-weight: bold;
+        color: #9D2235; /* Red color for labels */
+    }
+
+    .booking-card div span {
+        margin-left: 4px; /* Small space between label and content */
+    }
+
+    .serial-number {
+        position: absolute;
+        bottom: 10px; /* Position at the bottom of the card */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for centering */
+        font-weight: bold;
+        color: #ffffff; /* White color for serial number */
+        font-size: 16px; /* Adjust size as needed */
+        background-color: #9D2235; /* Dark blue background */
+        border-radius: 50%;
+        padding: 1.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center text inside the background circle */
+    }
+
+    /* Background gradient for the overall page */
+    .bookings-list {
+        padding: 0.5% 20px;
+        font-family: 'Comfortaa', sans-serif;
+        text-align: center;
+        background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), 
+                    url('/public/assets/images/sample.png'); /* Semi-transparent overlay over the image */
+        background-size: cover; /* Make sure the image covers the entire page */
+        background-attachment: fixed; /* Make the background fixed */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
     }
 }
+
