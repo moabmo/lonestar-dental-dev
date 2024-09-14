@@ -28,10 +28,10 @@
 }
 
 table {
-    width: 80%;
+    width: 100%; /* Full width on all screens */
+    max-width: 1200px; /* Max width for larger screens */
     border-collapse: collapse;
-    margin-bottom: 20px;
-    margin: auto;
+    margin: 0 auto 20px auto; /* Center the table */
     border-radius: 12px; /* Fancy border radius for the table */
     overflow: hidden; /* Ensures rounded corners for the table */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for the table */
@@ -103,4 +103,30 @@ table tr:hover {
     border-radius: 12px; /* Fancy border radius for select */
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for select */
+}
+
+.row-selector {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 12px; /* Fancy border radius for row selector */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for row selector */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .pagination-buttons {
+        flex-direction: column;
+    }
+
+    .row-selector {
+        margin-bottom: 10px; /* Margin below the row selector for smaller screens */
+    }
 }
