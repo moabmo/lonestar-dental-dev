@@ -3,7 +3,6 @@
     padding: 0.5% 20px;
     font-family: 'Comfortaa', sans-serif;
     text-align: center;
-    background-color: #f8f8f8;
     background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)),
                 url('/public/assets/images/sample.png'); /* Add semi-transparent overlay over the image */
     background-size: cover; /* Make sure the image covers the entire page */
@@ -117,7 +116,6 @@ table tr:hover {
     justify-content: center;
 }
 
-/* Updated CSS for Booking Cards */
 /* Responsive adjustments */
 @media (max-width: 768px) {
     table {
@@ -145,18 +143,15 @@ table tr:hover {
     .booking-card div {
         margin-bottom: 8px;
         font-size: 14px;
-        display: flex;
-        justify-content: space-between; /* Align label and content on the same line */
+        display: flex; /* Use flexbox to align items */
+        align-items: center; /* Align items vertically centered */
+        gap: 4px; /* Space between label and content */
     }
 
     .booking-card div::before {
         content: attr(data-label); /* Use data-label for the header text */
         font-weight: bold;
         color: #9D2235; /* Red color for labels */
-    }
-
-    .booking-card div span {
-        margin-left: 4px; /* Small space between label and content */
     }
 
     .serial-number {
@@ -177,9 +172,6 @@ table tr:hover {
 
     /* Background gradient for the overall page */
     .bookings-list {
-        padding: 0.5% 20px;
-        font-family: 'Comfortaa', sans-serif;
-        text-align: center;
         background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), 
                     url('/public/assets/images/sample.png'); /* Semi-transparent overlay over the image */
         background-size: cover; /* Make sure the image covers the entire page */
@@ -189,3 +181,8 @@ table tr:hover {
     }
 }
 
+@media (min-width: 769px) {
+    .booking-card {
+        display: none; /* Hide the booking cards on larger screens */
+    }
+}
