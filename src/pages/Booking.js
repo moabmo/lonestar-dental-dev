@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/Booking.css';
+import { db } from '../firebase';
+import { collection, addDoc } from 'firebase/firestore';
+import { successToast } from '../components/toastConfig'; // Import the toast function
+import { ToastContainer } from 'react-toastify'; // Import ToastContainer
 
 const servicesList = [
   "Masking",
@@ -82,10 +86,32 @@ const Booking = () => {
 
     setErrors({});
 
-    if (name && email && phone && date && time && selectedServices.length > 0) {
-      alert('Your appointment has been booked successfully!');
-    } else {
-      alert('Please fill all required fields and select at least one service.');
+    // Prepare data for Firestore
+    const formData = {
+      name,
+      email,
+      phone,
+      date,
+      time,
+      services: selectedServices || [], // Ensure services is an array
+      message,
+    };
+
+    try {
+      const docRef = await addDoc(collection(db, 'bookings'), formData);
+      successToast(name, time, selectedServices.join(', ')); // Pass name, time, and services to toast
+
+      // Clear form after successful submission
+      setName('');
+      setEmail('');
+      setPhone('');
+      setDate('');
+      setTime('');
+      setMessage('');
+      setSelectedServices([]);
+    } catch (error) {
+      console.error('Error adding document: ', error);
+      setErrors({ form: 'Failed to submit the booking. Please try again.' });
     }
   };
 
@@ -93,7 +119,6 @@ const Booking = () => {
     const today = new Date();
     const hours = today.getHours();
     if (hours >= 16) {
-      // If current time is past 4 PM, disable today
       today.setDate(today.getDate() + 1);
     }
     const year = today.getFullYear();
@@ -211,8 +236,10 @@ const Booking = () => {
           </label>
           {errors.message && <span className="error-message">{errors.message}</span>}
           <button type="submit">Book Appointment</button>
+          {errors.form && <span className="error-message">{errors.form}</span>}
         </div>
       </form>
+      <ToastContainer /> {/* Add ToastContainer to render toasts */}
     </div>
   );
 };

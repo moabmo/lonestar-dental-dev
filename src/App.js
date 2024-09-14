@@ -8,6 +8,7 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
 import Booking from './pages/Booking';
+import BookingsList from './pages/BookingsList';
 import AdjustContent from './components/AdjustContent'; // Import the AdjustContent component
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/bookings" element={<BookingsList />} />
         </Routes>
       </div>
       <Footer />
