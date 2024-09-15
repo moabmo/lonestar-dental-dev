@@ -51,7 +51,7 @@ const ContactUs = () => {
         <p>Phone: +254 792 056 862</p>
         <p>Email: info@lonestardentalcare.co.ke</p>
       </div>
-      <ToastContainer /> {/* Include ToastContainer here */}
+      <ToastContainer /> 
     </div>
   );
 };
