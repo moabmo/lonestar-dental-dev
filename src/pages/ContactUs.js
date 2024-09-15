@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/ContactUs.css';
+import { ToastContainer, toast } from 'react-toastify'; // Import ToastContainer and toast
+import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
 
 const ContactUs = () => {
   const handleSubmit = async (event) => {
@@ -15,13 +17,14 @@ const ContactUs = () => {
         mode: 'no-cors',  // Required to handle CORS
       });
 
-      // Since CORS restrictions might prevent checking response status
-      alert('Message sent successfully!');
-      
+      // Display a success toast message
+      toast.success('Message sent successfully!');
+
       // Clear the form fields
       form.reset();
     } catch (error) {
-      alert('Error: ' + error.message);
+      // Display an error toast message
+      toast.error('Error: ' + error.message);
     }
   };
 
@@ -48,6 +51,7 @@ const ContactUs = () => {
         <p>Phone: +254 792 056 862</p>
         <p>Email: info@lonestardentalcare.co.ke</p>
       </div>
+      <ToastContainer /> {/* Include ToastContainer here */}
     </div>
   );
 };
