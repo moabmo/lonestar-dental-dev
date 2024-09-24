@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           <div className="icon-text">
             <FontAwesomeIcon icon={faEnvelope} />
-            <p>info@lonestardentalcare.com</p>
+            <p>info@lonestardentalcare.co.ke</p>
           </div>
         </address>
 
