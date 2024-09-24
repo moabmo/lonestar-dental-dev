@@ -20,7 +20,7 @@ header {
 
 /* Header styles when scrolled */
 header.scrolled {
-  background-color: white; /* Solid background color when scrolled */
+  background: linear-gradient(135deg, #e0e7ff, #f8f9fa); 
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add shadow on scroll */
   border-bottom-left-radius: 20px; /* Rounded corners */
   border-bottom-right-radius: 20px;
