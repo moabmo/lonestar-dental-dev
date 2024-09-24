@@ -115,7 +115,12 @@
   min-width: 300px;
   text-align: left;
   animation: slideInLeft 1s ease-in-out;
+  padding: 1%;
+  border-radius: 12px 30px 12px 30px; /* Creative border radius */
+  color: #042260;
+  background: linear-gradient(135deg, rgba(224, 231, 255, 0.4), rgba(248, 249, 250, 0.4)); /* Opacity added */
 }
+
 
 .intro-image {
   width: 100%;
@@ -135,11 +140,12 @@
   border: 1px solid #ddd;
   border-radius: 12px 30px 12px 30px; /* Creative border radius */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  color: #042260;
   background: linear-gradient(135deg, #e0e7ff, #f8f9fa); /* Background gradient before hover */
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s, background 0.3s, border-radius 0.3s;
-  color: #042260;
+  
 }
 
 /* Hover effects without translation */
