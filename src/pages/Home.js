@@ -80,15 +80,15 @@ const Home = () => {
         <div className="testimonial-items">
           <div className="testimonial-item">
             <p>"Lonestar Dental Care has transformed my smile! The staff is incredibly friendly and professional. I highly recommend their services."</p>
-            <p>- John Doe</p>
+            <p>- Emmanuel Wafula</p>
           </div>
           <div className="testimonial-item">
             <p>"I have never felt more comfortable at a dentist's office. The team at Lonestar Dental Care is amazing."</p>
-            <p>- Jane Smith</p>
+            <p>- Jane Muthoni</p>
           </div>
           <div className="testimonial-item">
             <p>"The best dental experience I've ever had. The dentists are skilled, and the environment is very welcoming."</p>
-            <p>- Michael Johnson</p>
+            <p>- Michael Omondi</p>
           </div>
         </div>
       </section>
